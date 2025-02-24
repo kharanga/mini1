@@ -8,7 +8,6 @@ int main() {
 	Records records;
 	std::string currentLine;
 	while((currentLine = reader.readLine()) != "") {
-		// std::cout << currentLine << std::endl;
 		records.addRecord(records.parseRecord(currentLine));
 	}
 	auto endTime = std::chrono::high_resolution_clock::now();
